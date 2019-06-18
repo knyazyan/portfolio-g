@@ -2,7 +2,6 @@
   <v-app>
     <keep-alive>
       <component :is="layout">
-        <router-view/>
       </component>
     </keep-alive>
     <PageShow></PageShow>

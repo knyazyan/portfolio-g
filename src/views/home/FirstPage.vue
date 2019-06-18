@@ -1,6 +1,6 @@
 <template>
   <div>
-    ddd
+    Mushegh Maruqyan
   </div>
 </template>
 
@@ -12,3 +12,7 @@
     }
   }
 </script>
+
+<style scoped lang="scss">
+
+</style>
