@@ -46,7 +46,7 @@
     grid-template-columns: auto auto 1fr;
     align-items: center;
     padding: 3px 40px;
-    background-color: #ffffff;
+    background: #ffffff;
     border-bottom: 1px solid #ddd8;
     transform: translateY(-100%);
     opacity: 0;

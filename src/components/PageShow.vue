@@ -26,8 +26,6 @@
 
 <style lang="scss" scoped>
     .page-show{
-        background-color: #aaa5;
-        /*z-index: 223;*/
         position: absolute;
         overflow: hidden;
         width: 100%;

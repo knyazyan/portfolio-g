@@ -47,7 +47,7 @@
             position: absolute;
             top: -10px;
             left: -10px;
-            background-color: #00000022;
+            background-color: rgba(23, 202, 255, 0.61);
             border-radius: 50%;
             &.pointer{
                 transform: scale(3);
