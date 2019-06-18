@@ -21,15 +21,28 @@
 
 <style lang="scss" scoped>
     .page-show{
-
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
         .admin-logo{
             position: absolute;
             top: calc(50% - 100px);
             left: calc(50% - 100px);
+            animation: userMove;
+            animation-delay: 10s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(.99,-0.69,.66,1.2);
 
             img{
                 width: 200px;
                 position: relative;
+                animation: userPhotoSize;
+                animation-delay: 10s;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                animation-timing-function: cubic-bezier(.81,-0.27,.86,.77);
             }
             .hello-wrap{
                 position: relative;
@@ -37,43 +50,13 @@
                 justify-content: center;
                 p{
                     font-size: 20px;
-                    animation: type 6s steps(9);
+                    animation: type 5s steps(9);
                     animation-delay: 4s;
                     animation-fill-mode: forwards;
                     overflow: hidden;
                     white-space: nowrap;
                     font-family: Consolas;
                     width: 0;
-                }
-                @keyframes type {
-                    0%{
-                        width: 0;
-                        border-right: 4px solid black;
-                    }
-                    40%{
-                        width: 6ch;
-                        border-right: 4px solid black;
-                    }
-                    45%{
-                        border-right: unset;
-                    }
-                    50%{
-                        border-right: 4px solid black;
-                    }
-                    55%{
-                        border-right: unset;
-                    }
-                    60%{
-                        width: 6ch;
-                        border-right: 4px solid black;
-                    }
-                    99%{
-                        border-right: 4px solid black;
-                    }
-                    100%{
-                        width: 0;
-                        border-right: unset;
-                    }
                 }
             }
         }
@@ -101,16 +84,59 @@
                 animation-fill-mode: forwards;
                 animation-timing-function: cubic-bezier(.81,-0.27,.86,.77);
             }
-
-            @keyframes circleMove {
-                50% {
-                    left: calc(50% - 20px);
-                    transform: scale(1);
+        }
+        @keyframes type {
+            0%{
+                width: 0;
+                border-right: 4px solid black;
+            }
+            30%{
+                width: 6ch;
+                border-right: 4px solid black;
+            }
+            45%{
+                border-right: unset;
+            }
+            50%{
+                border-right: 4px solid black;
+            }
+            55%{
+                border-right: unset;
+            }
+            70%{
+                width: 6ch;
+                border-right: 4px solid black;
+            }
+            99%{
+                border-right: 4px solid black;
+            }
+            100%{
+                width: 0;
+                border-right: unset;
+            }
+        }
+        @keyframes circleMove {
+            50% {
+                left: calc(50% - 20px);
+                transform: scale(1);
+            }
+            100%{
+                left: calc(50% - 20px);
+                transform: scale(300);
+            }
+        }
+        @keyframes userMove {
+            100%{
+                left: 100px;
+                top: 3px;
+                img{
+                    width: 60px;
                 }
-                100%{
-                    left: calc(50% - 20px);
-                    transform: scale(300);
-                }
+            }
+        }
+        @keyframes userPhotoSize {
+            100%{
+                width: 60px;
             }
         }
     }
