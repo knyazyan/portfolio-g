@@ -15,7 +15,12 @@
 
 <script>
     export default {
-        name: "PageShow"
+        name: "PageShow",
+        mounted() {
+            setTimeout(() => {
+                this.$emit('hide', false)
+            },12700)
+        }
     }
 </script>
 
@@ -127,7 +132,7 @@
         }
         @keyframes userMove {
             100%{
-                left: 100px;
+                left: 87px;
                 top: 3px;
                 img{
                     width: 60px;
