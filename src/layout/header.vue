@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="language">
-      <span @click="setLang('ru')">ru/eng</span>
+      <span @click="setLang('en')">ru/eng</span>
     </div>
     <div class="menu">
       <span>{{$t('message')}}</span>
