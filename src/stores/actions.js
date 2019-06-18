@@ -5,4 +5,7 @@ export default {
     // [types.A_SET_LANG] ( context, payload ) {
     //     context.commit(mutation_types.M_SET_LANG, payload);
     // },
+  setLang({commit}, payload) {
+    commit(mutation_types.SET_LANG, payload)
+  }
 };

@@ -1,10 +1,10 @@
 <template>
   <div class="header">
     <div class="language">
-      <span>ru/eng</span>
+      <span @click="setLang('ru')">ru/eng</span>
     </div>
     <div class="menu">
-      <span>MENU</span>
+      <span>{{$t('message')}}</span>
     </div>
   </div>
 </template>
@@ -15,6 +15,11 @@
     data() {
       return {
 
+      }
+    },
+    methods: {
+      setLang: function(lang){
+        this.$store.dispatch('setLang', lang)
       }
     }
   }

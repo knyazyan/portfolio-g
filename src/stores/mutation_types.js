@@ -1,1 +1,1 @@
-// export const M_SET_LANG = "M_SET_LANG";
+export const SET_LANG = "SET_LANG";
