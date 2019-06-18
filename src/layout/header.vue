@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div :class="['header', {'z-index' : header_z}]">
     <div class="language">
       <span @click="setLang('en')">ru/eng</span>
     </div>
@@ -21,11 +21,13 @@
     data() {
       return {
         user_photo_opacity: 0,
+        header_z: false,
       }
     },
     mounted(){
       setTimeout( () => {
         this.user_photo_opacity = 1;
+        this.header_z = true;
       },12700)
     },
     methods: {
@@ -53,7 +55,9 @@
     animation-duration: 0.9s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-
+    &.z-index{
+      z-index: 1;
+    }
     .user-photo{
       height: 60px;
       img{

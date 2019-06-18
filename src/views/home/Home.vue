@@ -1,6 +1,5 @@
 <template>
-  <div class="home">
-    asdasdasd
+  <div :class="['home', {'show-home' : home_opacity}]">
     <FirstPage />
   </div>
 </template>
@@ -14,11 +13,23 @@
       FirstPage
     },
     data() {
-      return {}
+      return {
+        home_opacity: false
+      }
+    },
+    mounted() {
+      setTimeout( () => {
+        this.home_opacity = true
+      },12700)
     }
   }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  .home{
+    opacity: 0;
+    &.show-home{
+      opacity: 1;
+    }
+  }
 </style>
