@@ -15,7 +15,6 @@
         <span :class="['menu-line menu-line2', {'menu-show': menu_show}]"></span>
         <span :class="['menu-line menu-line3', {'menu-show': menu_show}]"></span>
       </div>
-      <span class="menu-text">{{menu_show ? 'Close' : 'Menu'}}</span>
 <!--      <span>{{$t('message')}}</span>-->
     </div>
   </div>
@@ -103,15 +102,13 @@
     }
     .language {
 
+      span{
+        font-family: 'Artifika', serif;
+      }
     }
     .menu{
       justify-self: end;
-      display: flex;
-      align-items: center;
 
-      .menu-text{
-        margin-left: 4px;
-      }
       .menu-icon{
         position: relative;
         width: 18px;
@@ -147,11 +144,4 @@
       }
     }
   }
-
-  /*@keyframes headerShow {*/
-  /*  100%{*/
-  /*    transform: translateY(0);*/
-  /*    opacity: 1;*/
-  /*  }*/
-  /*}*/
 </style>
