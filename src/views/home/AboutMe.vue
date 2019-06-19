@@ -90,7 +90,7 @@
     .about-me{
         width: 100%;
         height: 1060px;
-        background-color: #f4f4f6;
+        background-color: #ffffff;
         padding: 0 60px;
         display: flex;
         justify-content: center;
