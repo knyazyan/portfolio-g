@@ -1,17 +1,12 @@
 <template>
   <div class="FirstPage">
-    <div>
+    <div class="FirstPage-content">
       <h1  class="text-name">front end developer </h1>
-      <div class="text">
-        <p>Имя:Гурген </p>
-        <p>фамилия: егиазарян</p>
-        <p>лет:26</p>
-        <p>Профессия: Программист</p>
-        <p>страна :Армения </p>
-      </div>
+      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet expedita illo laboriosam officiis quae voluptatibus.</p>
+      <p class="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, illo?</p>
     </div>
-
   </div>
+
 </template>
 
 <script>
@@ -30,41 +25,77 @@
     min-height:100vh ;
     background:   url("../../assets/images/StartUpStock_1.jpg") no-repeat center;
     background-size: cover;
-    /*background-origin:border-box;*/
     position: relative;
-    /*opacity: 1;*/
-
-  }
-  .text-name{
-    text-transform: uppercase;
-    font-family:sans-serif;
-    color: white;
-    font-size: 80px;
-    position: absolute;
-    left: -100%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    white-space: nowrap;
-    animation-name: test;
-    animation-duration:3s ;
-    animation-timing-function: linear;
-    animation-delay:13s ;
-    animation-fill-mode: forwards;
   }
 
-@keyframes test {
-  100%{
-    left: 47%;
-  }
-}
+  .FirstPage-content{
+    width:inherit;
+    min-height:inherit;
 
-  .text{
-    text-transform: uppercase;
-    position: absolute;
-    top:450px;
-    left: 1460px;
-    transform: rotate(-16deg);
-  }
+    .text-name{
+      text-transform: uppercase;
+      font-family:sans-serif;
+      color: white;
+      font-size: 80px;
+      position: absolute;
+      top: 50%;
+      left: -10%;
+      opacity: 0;
+      transform: translateX(-50%) translateY(-50%);
+      transform-origin: 50% 50%;
+      white-space: nowrap;
+      animation-name: test;
+      animation-duration: 1.7s ;
+      animation-timing-function: linear;
+      animation-delay:13s;
+      animation-fill-mode: forwards;
 
+      @keyframes test {
+        100%{
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          opacity: 1;
+        }
+      }
+    }
+
+    .text{
+      color: #ffffff;
+      text-transform: uppercase;
+      position: absolute;
+      top:100%;
+      left: 20%;
+      animation-name: text;
+      animation-duration: 3s ;
+      animation-timing-function: linear;
+      animation-delay:13s;
+      animation-fill-mode: forwards;
+      @keyframes text {
+        100%{
+          top:60%;
+
+        }
+      }
+    }
+    .text1{
+      color: #ffffff;
+      text-transform: uppercase;
+      position: absolute;
+      top:100%;
+      left: 30%;
+      animation-name: text1;
+      animation-duration: 3s ;
+      animation-timing-function: linear;
+      animation-delay:13s;
+      animation-fill-mode: forwards;
+      @keyframes text1 {
+        100%{
+          top:65%;
+
+        }
+      }
+    }
+
+  }
 
 </style>
