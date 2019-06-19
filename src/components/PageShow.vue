@@ -17,8 +17,11 @@
     export default {
         name: "PageShow",
         mounted() {
+            document.body.style.height = '100vh'
+            document.body.style.overflow = 'hidden'
             setTimeout(() => {
                 this.$emit('hide', false)
+                document.body.style.overflow = 'unset'
             },12700)
         }
     }
