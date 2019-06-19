@@ -32,23 +32,38 @@
     background-size: cover;
     /*background-origin:border-box;*/
     position: relative;
+    /*opacity: 1;*/
 
   }
   .text-name{
     text-transform: uppercase;
-    font-family:cursive;
+    font-family:sans-serif;
+    color: white;
     font-size: 80px;
     position: absolute;
-    top:250px;
-    left: 380px;
-
+    left: -100%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    white-space: nowrap;
+    animation-name: test;
+    animation-duration:3s ;
+    animation-timing-function: linear;
+    animation-delay:13s ;
+    animation-fill-mode: forwards;
   }
+
+@keyframes test {
+  100%{
+    left: 47%;
+  }
+}
 
   .text{
     text-transform: uppercase;
     position: absolute;
     top:450px;
-    left: 1450px;
+    left: 1460px;
+    transform: rotate(-16deg);
   }
 
 
