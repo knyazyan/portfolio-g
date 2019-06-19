@@ -2,9 +2,9 @@
   <div class="FirstPage">
     <div class="FirstPage-content">
       <h1  class="text-name">front end developer </h1>
-      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet expedita illo laboriosam officiis quae voluptatibus.</p>
-      <p class="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, illo?</p>
-      <p class="text2">Lorem ipsum dolor sit amet, consectetur</p>
+      <p class="text text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet expedita illo laboriosam officiis quae voluptatibus.</p>
+      <p class="text text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, illo?</p>
+      <p class="text text3">Lorem ipsum dolor sit amet, consectetur</p>
     </div>
   </div>
 
@@ -65,56 +65,50 @@
       text-transform: uppercase;
       position: absolute;
       top:100%;
-      left: 25%;
-      animation-name: text;
-      animation-duration: 2s ;
-      animation-timing-function: ease-in-out		;
-      animation-delay:13s;
-      animation-fill-mode: forwards;
-      @keyframes text {
-        100%{
-          top:60%;
-
-        }
-      }
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
     }
     .text1{
-      color: #ffffff;
-      text-transform: uppercase;
-      position: absolute;
-      top:100%;
-      left: 35%;
-      animation-name: text1;
-      animation-duration: 2s ;
-      animation-timing-function: ease-in-out			;
-      animation-delay:13.5s;
+      animation-name: text;
+      animation-duration: 1.4s ;
+      animation-timing-function: ease-in-out;
+      animation-delay:14.4s;
       animation-fill-mode: forwards;
-      @keyframes text1 {
-        100%{
-          top:65%;
-
-        }
-      }
     }
     .text2{
-      color: #ffffff;
-      text-transform: uppercase;
-      position: absolute;
-      top:100%;
-      left: 40%;
-      animation-name: text2;
-      animation-duration: 2s ;
-      animation-timing-function: ease-in-out		;
-      animation-delay:14s;
+      animation-name: text1;
+      animation-duration: 1.4s ;
+      animation-timing-function: ease-in-out;
+      animation-delay:14.6s;
       animation-fill-mode: forwards;
-      @keyframes text2 {
-        100%{
-          top:70%;
-
-        }
-      }
+    }
+    .text3{
+      animation-name: text2;
+      animation-duration: 1.4s ;
+      animation-timing-function: ease-in-out;
+      animation-delay:14.8s;
+      animation-fill-mode: forwards;
     }
 
+    @keyframes text {
+      100%{
+        top:60%;
+
+      }
+    }
+    @keyframes text1 {
+      100%{
+        top:65%;
+
+      }
+    }
+    @keyframes text2 {
+      100%{
+        top:70%;
+
+      }
+    }
   }
 
 </style>
