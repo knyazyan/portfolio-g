@@ -31,6 +31,7 @@
 <style lang="scss" scoped>
   .home{
     opacity: 0;
+    transition: .2s all;
     &.show-home{
       opacity: 1;
     }
