@@ -4,6 +4,7 @@
       <h1  class="text-name">front end developer </h1>
       <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet expedita illo laboriosam officiis quae voluptatibus.</p>
       <p class="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, illo?</p>
+      <p class="text2">Lorem ipsum dolor sit amet, consectetur</p>
     </div>
   </div>
 
@@ -64,10 +65,10 @@
       text-transform: uppercase;
       position: absolute;
       top:100%;
-      left: 20%;
+      left: 25%;
       animation-name: text;
-      animation-duration: 3s ;
-      animation-timing-function: linear;
+      animation-duration: 2s ;
+      animation-timing-function: ease-in-out		;
       animation-delay:13s;
       animation-fill-mode: forwards;
       @keyframes text {
@@ -82,15 +83,33 @@
       text-transform: uppercase;
       position: absolute;
       top:100%;
-      left: 30%;
+      left: 35%;
       animation-name: text1;
-      animation-duration: 3s ;
-      animation-timing-function: linear;
-      animation-delay:13s;
+      animation-duration: 2s ;
+      animation-timing-function: ease-in-out			;
+      animation-delay:13.5s;
       animation-fill-mode: forwards;
       @keyframes text1 {
         100%{
           top:65%;
+
+        }
+      }
+    }
+    .text2{
+      color: #ffffff;
+      text-transform: uppercase;
+      position: absolute;
+      top:100%;
+      left: 40%;
+      animation-name: text2;
+      animation-duration: 2s ;
+      animation-timing-function: ease-in-out		;
+      animation-delay:14s;
+      animation-fill-mode: forwards;
+      @keyframes text2 {
+        100%{
+          top:70%;
 
         }
       }
