@@ -24,7 +24,7 @@
   .FirstPage{
     width:100%;
     min-height:100vh ;
-    background:   url("../../assets/images/StartUpStock_1.jpg") no-repeat center;
+    background: radial-gradient(#000a, #0002) , url("../../assets/images/StartUpStock_1.jpg") no-repeat center;
     background-size: cover;
     position: relative;
   }
