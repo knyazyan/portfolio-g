@@ -37,4 +37,5 @@
 
 <style lang="scss" scoped>
     @import './assets/globalCSS/style.css';
+
 </style>
