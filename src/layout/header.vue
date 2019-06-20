@@ -72,7 +72,7 @@
     display: grid;
     grid-template-columns: auto auto 1fr;
     align-items: center;
-    padding: 3px 40px;
+    padding: 3px 80px;
     background: #ffffff;
     border-bottom: 1px solid #ddd8;
     transition: .4s all;
