@@ -1,11 +1,16 @@
 <template>
-    <div class="about-me">
-        <div class="about-me-content">
+    <div class="about-me-box">
+        <div class="title">
+          <h2>Чем я занимаюсь в свободное время!</h2>
+        </div>
+        <div class="about-me">
+          <div class="about-me-content">
             <div class="img img1"></div>
             <div class="img img2"></div>
             <div class="img img3"></div>
             <div class="img img4"></div>
             <div class="img img5"></div>
+          </div>
         </div>
     </div>
 </template>
@@ -87,7 +92,19 @@
 </script>
 
 <style lang="scss" scoped>
-    .about-me{
+    .about-me-box {
+      background-color: #ffffff;
+      .title {
+        background-color: #ffffff;
+        margin: 40px 0;
+        text-align: center;
+
+        h2 {
+          font-size: 40px;
+          font-family: 'Artifika', serif;
+        }
+      }
+      .about-me{
         width: 100%;
         height: 1060px;
         background-color: #ffffff;
@@ -97,19 +114,20 @@
         align-items: center;
 
         .about-me-content{
-            position: relative;
-            width: 30%;
-            min-height: 260px;
+          position: relative;
+          width: 30%;
+          min-height: 260px;
 
-            .img{
-                position: absolute;
-                width: 100%;
-                height: 260px;
-                background-image: url("../../assets/images/about-me/test.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                transition: all .2s ease-in-out;
-            }
+          .img{
+            position: absolute;
+            width: 100%;
+            height: 260px;
+            background-image: url("../../assets/images/about-me/test.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all .2s ease-in-out;
+          }
         }
+      }
     }
 </style>
