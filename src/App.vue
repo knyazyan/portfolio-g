@@ -4,7 +4,7 @@
             <component :is="layout">
             </component>
         </keep-alive>
-        <PageShow  @hide="page_show_anim = $event"></PageShow>
+        <PageShow v-if="page_show_anim" @hide="page_show_anim = $event"></PageShow>
         <cCursor></cCursor>
     </v-app>
 </template>
