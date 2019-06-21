@@ -1,12 +1,11 @@
 <template>
     <div class="about-me">
        <div class="about-me_text">
-           <h1>здравствуйте я гурген очень рад вас видеть</h1>
-           <p>Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote
-               <br>work for agencies, consulted for startups, and collaborated with talented people to create
-               <br> digital products for both business and consumer use. I'm quietly confident, naturally curious,
-               <br> and perpetually working on improving my chops one design problem at a time.
-           </p>
+           <h1>здравствуйте я Гурген: Oчень рад вас видеть</h1>
+           <p>С начала моего путешествия в качестве внештатного дизайнера около 8 лет назад, я я сделал уборку на улице:</p>
+           <p>работал очень много работал день и ночь,пока мои друзья(роланд, мушег) подошли  ка мне и предлагали у них в офисесделать уборку</p>
+               <p>digital products for both business and consumer use. I'm quietly confident, naturally curious,</p>
+           <p> and perpetually working on improving my chops one design problem at a time.</p>
        </div>
 
         <div class="boxes">
