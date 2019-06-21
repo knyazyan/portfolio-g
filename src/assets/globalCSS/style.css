@@ -51,9 +51,25 @@ a {
     background:transparent;
 }
 
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #FFFFFF;
 }
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #8d45ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5530aa;
+}
+
 /*  FONTS  */
 @import url('https://fonts.googleapis.com/css?family=Artifika&display=swap');
 

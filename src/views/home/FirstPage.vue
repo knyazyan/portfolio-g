@@ -15,8 +15,10 @@
         <p :class="{'text-show': textFiveShow}">profitability.</p>
       </div>
     </div>
-    <div class="demo-code">
-      11111
+    <div class="demo-image-wrap">
+      <div class="demo-image">
+        <img src="../../assets/images/first-section/demo.png">
+      </div>
     </div>
   </div>
 
