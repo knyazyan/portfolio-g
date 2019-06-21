@@ -146,7 +146,7 @@
         background-color: #8C43FF;
         color: #ffffff;
         font-family: sans-serif;
-        z-index: 2;
+        /*z-index: 2;*/
     h1{
        text-align: center;
         padding-top: 120px;
@@ -165,7 +165,7 @@
         border-radius: 30px;
         background-color: #ffffff;
         transform: translateY(-250px);
-        z-index: 10;
+        /*z-index: 10;*/
         display:grid;
         grid-template-columns:1fr 1fr 1fr;
         box-shadow:0 3px 4px 0 #00000044;
