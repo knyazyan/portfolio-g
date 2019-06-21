@@ -1,7 +1,7 @@
 <template>
     <div class="about-me">
-       <div class="about-mi_text">
-           <h1>Hi, I’m Matt. Nice to meet you.</h1>
+       <div class="about-me_text">
+           <h1>здравствуйте я гурген очень рад вас видеть</h1>
            <p>Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote
                <br>work for agencies, consulted for startups, and collaborated with talented people to create
                <br> digital products for both business and consumer use. I'm quietly confident, naturally curious,
@@ -136,14 +136,17 @@
 </script>
 
 <style scoped lang="scss">
-
-    .about-mi_text{
+    .about-me{
+        display: grid;
+        justify-items: center;
+        padding-bottom: 30px;
+    }
+    .about-me_text{
         width: 100%;
         height: 700px;
         background-color: #8C43FF;
         color: #ffffff;
         font-family: sans-serif;
-        position: relative;
         z-index: 2;
     h1{
        text-align: center;
@@ -160,16 +163,13 @@
     .boxes{
         width: 60%;
         border: 1px solid #b1b1b1;
-        /*height: 600px;*/
         border-radius: 30px;
         background-color: #ffffff;
-        position: absolute;
-        bottom: -600px;
-        left: 20%;
+        transform: translateY(-250px);
         z-index: 10;
         display:grid;
         grid-template-columns:1fr 1fr 1fr;
-        /*box-shadow:0 0 0 1px #E6ECF8; */
+        box-shadow:0 3px 4px 0 #00000044;
 
         .box {
             padding: 20px 50px;
