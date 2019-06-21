@@ -1,21 +1,21 @@
 <template>
   <div :class="['home', {'show-home' : home_opacity}]">
     <FirstPage />
-    <Experience />
+    <Technologies />
   </div>
 </template>
 
 <script>
   import FirstPage from "@/views/home/FirstPage";
   import AboutMe from "@/views/home/AboutMe";
-  import Experience from "@/views/home/Experience";
+  import Technologies from "@/views/home/Technologies";
 
   export default {
     name: "home",
     components: {
       FirstPage,
       AboutMe,
-      Experience
+      Technologies
     },
     data() {
       return {
