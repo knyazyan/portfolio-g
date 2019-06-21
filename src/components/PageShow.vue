@@ -136,8 +136,8 @@
         }
         @keyframes userMove {
             100%{
-                left: 138px;
-                top: 3px;
+                left: 80px;
+                top: 10px;
                 img{
                     width: 60px;
                 }
