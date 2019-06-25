@@ -155,6 +155,7 @@
     background-color: #269AFF;
     color: #ffffff;
     font-family: sans-serif;
+    padding: 0 80px;
 
     h1{
       text-align: center;
@@ -178,11 +179,16 @@
     transform: translateY(-250px);
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
-    box-shadow:0 3px 4px 0 #00000044;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
 
     .box {
       padding: 20px 50px;
-      border-right: 1px solid #b1b1b1;
+      &:first-child{
+        border-right: 1px dashed #ccc;
+      }
+      &:last-child{
+        border-left: 1px dashed #ccc;
+      }
 
       .logo,  .title, .title-desc {
         text-align: center;
@@ -193,7 +199,7 @@
           text-align: center;
           margin-bottom: 20px;
           h5{
-            color:#CF99FF;
+            color: #269AFF;
           }
         }
         .title-desc{
@@ -206,7 +212,7 @@
         margin-bottom: 20px;
         h5{
           margin-bottom: 20px;
-          color:#CF99FF;
+          color: #269AFF;
         }
         p{
           margin-bottom: 20px;
