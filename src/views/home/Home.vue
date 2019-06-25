@@ -2,20 +2,26 @@
   <div :class="['home', {'show-home' : home_opacity}]">
     <FirstPage />
     <Technologies />
+    <HomePortfolio />
+    <Footer />
   </div>
 </template>
 
 <script>
   import FirstPage from "@/views/home/FirstPage";
-  import AboutMe from "@/views/home/AboutMe";
+  // import AboutMe from "@/views/home/AboutMe";
   import Technologies from "@/views/home/Technologies";
+  import HomePortfolio from "@/views/home/HomePortfolio";
+  import Footer from "@/views/home/Footer";
 
   export default {
     name: "home",
     components: {
       FirstPage,
-      AboutMe,
-      Technologies
+      // AboutMe,
+      Technologies,
+      HomePortfolio,
+      Footer
     },
     data() {
       return {

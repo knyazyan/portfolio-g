@@ -16,22 +16,15 @@
       <div class="portfolio-btn cursor-pointer">
         <span>Portfolio</span>
       </div>
-<!--      <div @click="menu_show = !menu_show" class="menu cursor-pointer">-->
-<!--        <div class="menu-icon">-->
-<!--          <span :class="['menu-line menu-line1', {'menu-show': menu_show}]"></span>-->
-<!--          <span :class="['menu-line menu-line2', {'menu-show': menu_show}]"></span>-->
-<!--          <span :class="['menu-line menu-line3', {'menu-show': menu_show}]"></span>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;      <span>{{$t('message')}}</span>&ndash;&gt;-->
-<!--      </div>-->
       <div class="contact-me-btn cursor-pointer">
-        <span>Say Hello</span>
+        <cButton value="Say Hello"></cButton>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import cButton from '@/components/cButton'
   export default {
     name: "Header",
     data() {
@@ -42,6 +35,9 @@
         header_hide: true,
         header_opacity: 1,
       }
+    },
+    components: {
+      cButton
     },
     mounted(){
       setTimeout( () => {
@@ -115,7 +111,7 @@
         left: 50%;
         width: 106%;
         height: 106%;
-        border: 2px solid #8C43FF;
+        border: 2px solid #269AFF;
         border-radius: 50%;
         opacity: 0;
         transform-origin: 50% 50%;
@@ -139,28 +135,13 @@
       display: flex;
       flex-flow: row wrap;
 
-      .contact-me-btn span{
-        border: 2px solid #8C43FF;
-        font-weight: 400;
-        font-size: 18px;
-        padding: 7px 15px;
-        background-color: transparent;
-        border-radius: 290486px;
-        color: #8C43FF;
-        transition: .2s all;
-        &:hover {
-          background-color: #8C43FF;
-          border-color: #8C43FF;
-          color: #fff;
-        }
-      }
       .portfolio-btn span {
         font-size: 17px;
         font-weight: 300;
         color: #293347;
         transition: .2s all;
         &:hover {
-          color: #8C43FF;
+          color: #269AFF;
         }
       }
     }
@@ -172,7 +153,7 @@
         color: #293347;
         transition: .2s all;
         &:hover {
-          color: #8C43FF;
+          color: #269AFF;
         }
       }
     }

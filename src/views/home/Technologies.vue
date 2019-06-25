@@ -147,7 +147,7 @@
   .technologies-text{
     width: 100%;
     height: 700px;
-    background-color: #8C43FF;
+    background-color: #269AFF;
     color: #ffffff;
     font-family: sans-serif;
     h1{
