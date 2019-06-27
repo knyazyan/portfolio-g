@@ -1,5 +1,5 @@
 <template>
-  <div :class="['home', {'show-home' : home_opacity}]">
+  <div :class="['home', {'show-home' : pageShow}]">
     <FirstPage />
     <Technologies />
     <HomePortfolio />
@@ -8,6 +8,8 @@
 </template>
 
 <script>
+  import * as types from "@/stores/types";
+
   import FirstPage from "@/views/home/FirstPage";
   // import AboutMe from "@/views/home/AboutMe";
   import Technologies from "@/views/home/Technologies";
@@ -25,13 +27,19 @@
     },
     data() {
       return {
-        home_opacity: false
+
       }
     },
     mounted() {
       setTimeout( () => {
-        this.home_opacity = true
+        let data = true
+        this.$store.dispatch(types.A_PAGE_SHOW, data)
       },12700)
+    },
+    computed: {
+      pageShow() {
+        return this.$store.getters['getPageShow']
+      }
     }
   }
 </script>

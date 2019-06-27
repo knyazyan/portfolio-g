@@ -5,7 +5,7 @@
             </component>
         </keep-alive>
         <PageShow v-if="page_show_anim" @hide="page_show_anim = $event"></PageShow>
-        <cCursor></cCursor>
+<!--        <cCursor></cCursor>-->
     </v-app>
 </template>
 

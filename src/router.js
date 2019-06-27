@@ -14,6 +14,12 @@ let router =  new Router({
       meta: {layout: "default_component", requiresAuth: true},
       component: () => import('./views/home/Home.vue')
     },
+    {
+      path: '/contact',
+      name: 'contact',
+      meta: {layout: "default_component", requiresAuth: true},
+      component: () => import('./views/home/ContactMe.vue'),
+    },
   ]
 });
 

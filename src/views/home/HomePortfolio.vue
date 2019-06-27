@@ -10,7 +10,7 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, hic!
           </p>
-          <cButton class="portfolio-btn cursor-pointer" value="Visit Website"></cButton>
+          <cButton class="portfolio-btn" value="Visit Website"></cButton>
         </div>
       </div>
       <div class="portfolio">
@@ -18,7 +18,7 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, hic!
           </p>
-          <cButton class="portfolio-btn cursor-pointer" value="Visit Website"></cButton>
+          <cButton class="portfolio-btn" value="Visit Website"></cButton>
         </div>
       </div>
       <div class="portfolio">
@@ -26,7 +26,7 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, hic!
           </p>
-          <cButton class="portfolio-btn cursor-pointer" value="Visit Website"></cButton>
+          <cButton class="portfolio-btn" value="Visit Website"></cButton>
         </div>
       </div>
       <div class="portfolio">
@@ -34,7 +34,7 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, hic!
           </p>
-          <cButton class="portfolio-btn cursor-pointer" value="Visit Website"></cButton>
+          <cButton class="portfolio-btn" value="Visit Website"></cButton>
         </div>
       </div>
       <div class="portfolio">
@@ -42,7 +42,7 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, hic!
           </p>
-          <cButton class="portfolio-btn cursor-pointer" value="Visit Website"></cButton>
+          <cButton class="portfolio-btn" value="Visit Website"></cButton>
         </div>
       </div>
       <div class="portfolio">
@@ -50,7 +50,7 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, hic!
           </p>
-          <cButton class="portfolio-btn cursor-pointer" value="Visit Website"></cButton>
+          <cButton class="portfolio-btn" value="Visit Website"></cButton>
         </div>
       </div>
     </div>
@@ -125,6 +125,7 @@
             transition: all .2s;
           }
           .portfolio-btn{
+            cursor: pointer;
             transition: all .2s;
           }
           &:hover{

@@ -155,7 +155,6 @@
                 align-items: center;
 
                 a {
-                    cursor: none;
                     &:hover path{
                         fill-opacity: 1;
                     }

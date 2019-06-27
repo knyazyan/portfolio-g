@@ -1,5 +1,5 @@
 <template>
-    <div class="c-button">
+    <div @click="click()" class="c-button">
         <span :style="{color: buttonColor}">{{value}}</span>
     </div>
 </template>
@@ -16,13 +16,19 @@
                 type: String,
                 default: ''
             },
-        }
+        },
+        methods: {
+            click(event) {
+                this.$emit('click', event);
+            }
+        },
     }
 </script>
 
 <style lang="scss" scoped>
 
     .c-button span{
+        cursor: pointer;
         border: 2px solid #269AFF;
         font-weight: 400;
         font-size: 18px;
