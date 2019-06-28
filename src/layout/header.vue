@@ -42,11 +42,6 @@
             cButton
         },
         mounted() {
-            if (this.currentPath == '/') {
-                this.openContact = true
-            } else {
-                this.openContact = false
-            }
             setTimeout(() => {
                 this.header_hide = false
             }, 11400)
@@ -88,6 +83,15 @@
             currentPath() {
                 return this.$route.path
             },
+        },
+        watch: {
+            currentPath(val) {
+                if (val == '/') {
+                    this.openContact = false
+                } else {
+                    this.openContact = true
+                }
+            }
         }
     }
 </script>
